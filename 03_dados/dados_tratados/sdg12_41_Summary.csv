@@ -1,0 +1,13 @@
+﻿unnamed:_0,unnamed:_1,unnamed:_2,unnamed:_3
+Circular material use rate [sdg_12_41],,,
+Open product page,Open in Data Browser,,
+Description: ,The circular material use rate (CMR) measures the share of material recovered and fed back into the economy in overall material use. The CMU is defined as the ratio of the circular use of material to the overall material use. The overall material use is measured by summing up the aggregate domestic material consumption (DMC) and the circular use of materials. DMC is defined in economy-wide material flow accounts. The circular use of materials is approximated by the amount of waste recycled in domestic recovery plants minus imported waste destined for recovery plus exported waste destined for recovery abroad. A higher CMU rate value means that more secondary materials substitute for primary raw materials thus reducing the environmental impacts of extracting primary material.,,
+Last update of data: ,,,24/11/2025 23:00
+Last change of data structure: ,,,18/11/2025 23:00
+,Institutional source(s),,
+,,Eurostat,
+,Source dataset(s),,
+,,This dataset is computed from,
+,,env_ac_cur,Open in Data Browser
+,Contents,Time frequency,Unit of measure
+,Sheet 1,Annual,Percentage
