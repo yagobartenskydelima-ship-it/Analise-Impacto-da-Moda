@@ -47,29 +47,14 @@ O projeto será desenvolvido em diferentes etapas:
 
 ## 📁 Estrutura do projeto
 
-```text
-projeto-impacto-moda/
-│
-├── 01_problematica/
-│   └── Projeto_Impacto_Roupas.docx
-│
-├── 02_fontes_dados/
-│
-├── 03_dados/
-│   ├── dados_originais/
-│   └── dados_tratados/
-│
-├── 04_eda/
-│   ├── analise_python.ipynb
-│   ├── consultas_sql.sql
-│   └── analise_pyspark.ipynb
-│
-├── 05_insights/
-│
-├── 06_dashboard/
-│
-└── README.md
-```
+- 02_fontes_dados/ — fontes e arquivos originais utilizados no projeto.
+- 03 EDA/ — materiais relacionados à análise exploratória de dados.
+- 03_dados/ — bases tratadas e arquivos preparados para análise.
+- Projeto_Impacto_Roupas.docx — documento de apresentação do projeto.
+- RELATÓRIO DE INSIGHTS.docx — relatório com os principais achados.
+- link look studio — arquivo destinado a registrar o link do painel interativo.
+- README.md — documentação principal do repositório.
+
 
 ## 📈 Resultados
 
