@@ -1,5 +1,6 @@
-Comércio Internacional de Roupas Usadas: Dados, Economia Circular e Desafios Ambientais
+#Comércio Internacional de Roupas Usadas: Dados, Economia Circular e Desafios Ambientais
 Resumo do projeto
+
 Este projeto utiliza dados públicos de comércio internacional para investigar como as roupas usadas circulam entre países e quais perguntas essa movimentação levanta para a economia circular e a gestão de resíduos têxteis.
 
 Pergunta central: quais países concentram os maiores volumes registrados no comércio internacional de roupas usadas e o que esses fluxos permitem — e não permitem — concluir sobre os desafios ambientais associados a esse comércio?
