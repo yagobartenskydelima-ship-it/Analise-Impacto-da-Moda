@@ -1,83 +1,142 @@
-#Comércio Internacional de Roupas Usadas: Dados, Economia Circular e Desafios Ambientais
-Resumo do projeto
+# Impacto Ambiental do Comércio Internacional de Roupas Usadas
 
-Este projeto utiliza dados públicos de comércio internacional para investigar como as roupas usadas circulam entre países e quais perguntas essa movimentação levanta para a economia circular e a gestão de resíduos têxteis.
+## 1. Apresentação do projeto
 
-Pergunta central: quais países concentram os maiores volumes registrados no comércio internacional de roupas usadas e o que esses fluxos permitem — e não permitem — concluir sobre os desafios ambientais associados a esse comércio?
-1. Problema que a análise busca resolver
-Organizações, pesquisadores e formuladores de políticas precisam entender a dimensão e a distribuição geográfica do comércio de roupas usadas para identificar onde vale a pena investigar a reutilização, a reciclagem e a destinação final das peças.
+O comércio internacional de roupas usadas faz parte de uma cadeia global que envolve consumo, reutilização, revenda e destinação de produtos têxteis. Embora a reutilização de roupas possa contribuir para prolongar a vida útil das peças e reduzir a demanda por novos produtos, a circulação internacional também levanta questões sobre a qualidade das roupas comercializadas, a capacidade de reutilização nos países importadores e a destinação das peças que não podem ser aproveitadas.
 
-O problema é que os registros comerciais mostram o que foi declarado como importado ou exportado, mas não informam necessariamente o destino final de cada peça. Uma roupa exportada pode ser revendida e reutilizada; outra pode não ter condições de uso e acabar como resíduo. Sem dados adicionais, esses resultados não podem ser tratados como equivalentes.
+Este projeto utiliza dados públicos para analisar os fluxos internacionais de importação e exportação de roupas usadas, identificar os países com maiores volumes registrados e investigar como essas movimentações podem contribuir para a compreensão dos desafios relacionados à economia circular e à gestão de resíduos têxteis.
 
-A contribuição deste projeto é transformar registros dispersos em uma visão comparável por país, ano e fluxo comercial, identificar padrões que merecem atenção e explicitar as lacunas de informação para avaliar impactos ambientais.
-2. Perguntas de negócio
-1. Quem são os principais exportadores? Quais países registram os maiores pesos exportados em cada ano?
-2. Quem são os principais importadores? Quais países registram os maiores pesos importados e como o ranking muda ao longo do tempo?
-3. O comércio está crescendo ou diminuindo? Como os volumes declarados evoluem entre os anos disponíveis?
-4. Os mesmos países aparecem nos dois fluxos? Quais países têm registros relevantes tanto de importação quanto de exportação?
-5. Peso e valor comercial contam a mesma história? O valor declarado por tonelada varia entre países e anos?
-6. O que podemos concluir sobre o impacto ambiental? Quais hipóteses podem ser levantadas pelos fluxos comerciais e quais exigem dados de resíduos, reutilização ou reciclagem?
-7. Onde é necessário investigar mais? Quais países e períodos merecem prioridade para pesquisa complementar por apresentarem grandes volumes ou lacunas de dados?
-3. Fontes de dados
-- UN Comtrade: registros de comércio internacional associados ao código HS 6309, referente a artigos usados, incluindo vestuário e outros artigos usados.
-- Eurostat: indicador Circular material use rate (taxa de uso circular de materiais), usado como contexto geral de economia circular.
-- Agência Europeia do Ambiente (EEA): informações relacionadas às exportações de têxteis usados na União Europeia.
-Consulte 02_fontes_dados/ para conferir os arquivos de origem e os períodos cobertos. As fontes têm escopos e métodos diferentes; só devem ser comparadas diretamente quando definições, unidades e períodos forem compatíveis.
-4. Principais achados preliminares
-A base tratada do UN Comtrade contém registros para 2022 a 2025, mas a cobertura varia conforme o país, o ano e a variável.
-- China: nos dados tratados, aparece como principal exportador por peso em 2025, com aproximadamente 1,37 milhão de toneladas registradas. O volume registrado passa de cerca de 603,7 mil toneladas em 2022 para 1,37 milhão em 2025.
-- Paquistão: aparece entre os principais importadores nos anos com peso disponível, com aproximadamente 1,08 milhão de toneladas em 2024.
-- Lacunas de dados: o peso de importação do Paquistão em 2025 está ausente na base usada. Isso não significa importação zero e impede uma comparação completa desse país nesse ano.
-Esses são achados descritivos preliminares e devem ser conferidos nos arquivos originais antes de serem publicados como resultados definitivos. Eles não demonstram, por si só, que as roupas foram descartadas ou que houve determinado nível de poluição.
-5. Como os resultados apoiam decisões
-Necessidade	Como a análise ajuda	O que ainda falta
-Identificar países prioritários para pesquisa	Ranking de importadores e exportadores por peso e ano	Validar cobertura e qualidade dos registros
-Monitorar mudanças no comércio	Série anual dos volumes declarados	Mais anos comparáveis e atenção a dados ausentes
-Investigar diferenças entre mercados	Comparação entre peso e valor comercial declarado	Verificar moeda, unidade e consistência dos valores
-Avaliar possíveis riscos ambientais	Identifica fluxos que podem orientar investigação complementar	Dados sobre reutilização, descarte, reciclagem e resíduos têxteis
-Contextualizar a economia circular	Permite discutir os resultados junto a indicadores gerais de circularidade	Indicadores específicos de têxteis e períodos compatíveis
+O objetivo é transformar dados comerciais em informações relevantes, apresentando não apenas números e gráficos, mas também perguntas de negócio, insights, conclusões e limitações que ajudem a compreender melhor o problema investigado.
 
+## 2. Problema de negócio
 
-6. Painel no Looker Studio
-O painel deve permitir que qualquer pessoa explore os dados sem precisar programar. Visualizações recomendadas:
-- Ranking de exportadores: país como dimensão e peso em toneladas como métrica.
-- Ranking de importadores: mesma estrutura, filtrando o fluxo de importação.
-- Evolução anual: peso registrado por ano, separando importações e exportações.
-- Comparação entre fluxos: gráficos separados para evitar interpretações equivocadas ao combinar importação e exportação.
-- Peso versus valor: exploração da relação entre volume e valor comercial declarado, quando ambos estiverem disponíveis.
-- Filtros: ano, país e fluxo comercial.
-Link do painel: adicione aqui o link compartilhável do Looker Studio.
-7. Conclusões
-A análise dos registros comerciais permite identificar os países que concentram os maiores volumes declarados, acompanhar variações ao longo dos anos e localizar lacunas de informação. Isso ajuda a organizar o problema e a definir onde estudos adicionais podem ser mais úteis.
+A circulação internacional de roupas usadas gera uma questão importante: como identificar os principais fluxos comerciais e investigar se eles estão associados a desafios de reutilização, reciclagem e destinação de resíduos têxteis?
 
-No entanto, volume comercial não é o mesmo que volume de resíduo. Os registros não mostram, sozinhos, quantas peças foram revendidas, reutilizadas, recicladas ou descartadas depois de chegar ao país de destino. Por isso, não é correto classificar um país como destino de resíduos têxteis apenas porque ele apresenta importações elevadas.
+Os dados de comércio internacional permitem observar quais países declaram maiores volumes de importação e exportação. Entretanto, essas informações não mostram necessariamente o destino final das peças. Parte das roupas pode ser revendida ou reutilizada, enquanto outra parte pode não apresentar condições adequadas de uso e precisar de outra forma de destinação.
 
-A principal conclusão metodológica é que os dados de comércio são um ponto de partida para investigar o tema, não uma medida direta do impacto ambiental. A combinação com dados de geração e destinação de resíduos, infraestrutura de triagem e reciclagem e condições das peças permitiria avançar de uma descrição dos fluxos para uma avaliação ambiental mais robusta.
-8. Limitações
-- O país declarante não deve ser automaticamente interpretado como destino final das roupas.
-- Valores ausentes não equivalem a zero.
-- O código HS 6309 tem um escopo específico e não representa todo o comércio de resíduos têxteis.
-- Diferenças de cobertura e qualidade podem afetar comparações entre países e anos.
-- A taxa de uso circular de materiais do Eurostat é um indicador geral de materiais, não uma medida exclusiva da reutilização de roupas.
-- Correlação entre comércio e indicadores ambientais não comprova causalidade.
-- Os resultados preliminares devem ser validados na fonte antes da publicação.
-9. Próximas etapas
-1. Conferir os principais valores na base original e registrar os filtros usados.
-2. Finalizar os gráficos de importação e exportação no Looker Studio.
-3. Calcular e comparar o valor por tonelada apenas nos registros com peso e valor válidos.
-4. Investigar fontes adicionais sobre resíduos têxteis, reutilização e reciclagem por país.
-5. Atualizar as conclusões quando as análises forem validadas.
-Estrutura do repositório
-- 02_fontes_dados/ — fontes e arquivos originais.
-- 03 EDA/ — materiais da análise exploratória.
-- 03_dados/ — bases tratadas e preparadas para análise.
-- Projeto_Impacto_Roupas.docx — documento de apresentação do projeto.
-- RELATÓRIO DE INSIGHTS.docx — relatório de resultados.
-- link look studio — arquivo destinado a registrar o link do painel.
-- README.md — documentação principal.
-Referências
-- UN Comtrade — conceitos e definições de estatísticas de comércio internacional
-- Eurostat — Circular material use rate
-- Agência Europeia do Ambiente — Circular material use rate in Europe
-Autor
+Essa falta de informação dificulta a avaliação dos possíveis impactos ambientais e a identificação dos locais que precisam de maior investigação.
+
+Diante disso, o projeto busca organizar e analisar os dados disponíveis para identificar padrões comerciais, acompanhar mudanças ao longo dos anos e apontar quais informações adicionais seriam necessárias para avaliar os impactos ambientais com maior precisão.
+
+## 3. Perguntas de negócio
+
+A análise foi estruturada para responder às seguintes perguntas:
+
+1. Quais países registram os maiores volumes de exportação de roupas usadas?
+2. Quais países registram os maiores volumes de importação?
+3. Como os volumes de importação e exportação mudaram ao longo dos anos analisados?
+4. Quais países aparecem com destaque nos dois fluxos comerciais?
+5. Existe uma relação entre o peso comercializado e o valor declarado das mercadorias?
+6. Quais países e períodos merecem uma investigação ambiental mais aprofundada?
+7. Até que ponto os dados comerciais permitem compreender os desafios relacionados à reutilização e à destinação de resíduos têxteis?
+8. Quais dados complementares seriam necessários para avaliar se as roupas importadas estão sendo reutilizadas, recicladas ou descartadas?
+
+Essas perguntas direcionam a análise para resultados que podem apoiar investigações futuras, facilitar a interpretação dos dados e demonstrar como a análise de dados pode contribuir para a compreensão de problemas reais.
+
+## 4. Objetivos
+
+O objetivo geral é analisar o comércio internacional de roupas usadas para identificar os principais países envolvidos, observar tendências ao longo do tempo e investigar possíveis relações com questões ambientais.
+
+Como objetivos específicos, pretende-se:
+
+- Identificar os principais países exportadores e importadores.
+- Comparar os volumes registrados por país e ano.
+- Observar aumentos, reduções e mudanças na distribuição dos fluxos comerciais.
+- Investigar a relação entre peso e valor comercial declarado, quando os dados estiverem disponíveis.
+- Contextualizar os resultados com indicadores de economia circular.
+- Identificar limitações nas bases utilizadas.
+- Propor caminhos para aprofundar a investigação sobre reutilização, reciclagem e destinação de resíduos têxteis.
+
+## 5. Fontes de dados
+
+O projeto utiliza bases públicas relacionadas ao comércio internacional e à economia circular.
+
+UN Comtrade: fornece registros de comércio internacional associados ao código HS 6309, referente a artigos usados, incluindo vestuário e outros artigos usados. Essa fonte é utilizada para analisar os fluxos de importação e exportação por país e ano.
+
+Eurostat: disponibiliza o indicador Circular Material Use Rate, que representa a taxa de uso circular de materiais. O indicador contribui para contextualizar a discussão sobre economia circular, embora não meça especificamente a reutilização de roupas.
+
+Agência Europeia do Ambiente (EEA): fornece informações relacionadas às exportações de têxteis usados na União Europeia, contribuindo para a compreensão do comércio internacional desses materiais.
+
+As fontes possuem escopos, unidades e períodos distintos. Por isso, as comparações entre elas precisam considerar suas definições e limitações.
+
+## 6. Metodologia
+
+O desenvolvimento do projeto foi organizado em cinco etapas principais.
+
+Coleta dos dados: obtenção de bases públicas relacionadas ao comércio internacional de roupas usadas e a indicadores de economia circular.
+
+Preparação dos dados: inspeção das colunas, padronização dos nomes dos campos, identificação de valores ausentes e organização das informações por país, ano e fluxo comercial.
+
+Análise exploratória de dados (EDA): investigação dos volumes de importação e exportação, comparação entre países, observação de mudanças ao longo dos anos e análise dos valores comerciais disponíveis.
+
+Visualização: elaboração de gráficos e construção de um painel no Looker Studio para facilitar a exploração dos resultados.
+
+Interpretação dos resultados: identificação de padrões relevantes, formulação de conclusões, reconhecimento das limitações e proposição de novas perguntas para aprofundar a análise ambiental.
+
+## 7. Insights preliminares
+
+A base tratada do UN Comtrade contém registros de importação e exportação referentes ao período de 2022 a 2025. Entretanto, a disponibilidade das informações varia entre países, anos e variáveis.
+
+Entre os resultados preliminares observados, a China aparece como principal exportadora por peso em 2025 nos dados tratados, com aproximadamente 1,37 milhão de toneladas registradas. O volume informado para o país aumentou de cerca de 603,7 mil toneladas em 2022 para aproximadamente 1,37 milhão de toneladas em 2025.
+
+O Paquistão também aparece entre os principais importadores nos anos em que há dados de peso disponíveis, com aproximadamente 1,08 milhão de toneladas registradas em 2024.
+
+Outro ponto importante é a existência de valores ausentes. O peso das importações do Paquistão em 2025, por exemplo, não está disponível na base utilizada. Essa ausência não deve ser interpretada como importação igual a zero e limita a comparação entre os anos.
+
+Esses resultados mostram como a análise exploratória pode identificar países e períodos que merecem atenção. No entanto, os números devem ser validados na fonte original antes de serem apresentados como resultados definitivos.
+
+Além disso, grandes volumes comerciais não comprovam, por si só, que as roupas foram descartadas ou que causaram determinado impacto ambiental. Para chegar a esse tipo de conclusão, seria necessário combinar os registros comerciais com dados sobre a destinação efetiva das peças.
+
+## 8. Aplicação prática da análise
+
+Os resultados podem ser utilizados para identificar quais países concentram os maiores volumes registrados no comércio internacional de roupas usadas e acompanhar como esses fluxos mudam ao longo do tempo.
+
+Um ranking de exportadores pode ajudar a identificar os principais países declarantes nas vendas internacionais. Da mesma forma, um ranking de importadores pode indicar quais países registram maiores volumes de entrada dessas mercadorias.
+
+A comparação entre peso e valor comercial pode revelar diferenças entre os mercados, desde que as unidades e os valores sejam consistentes. Já a análise temporal pode mostrar se os volumes registrados aumentaram ou diminuíram, ajudando a selecionar períodos que merecem uma investigação mais detalhada.
+
+Do ponto de vista ambiental, esses resultados funcionam como um ponto de partida para direcionar pesquisas complementares. Se determinados países registram grandes volumes de importação, por exemplo, uma etapa posterior pode investigar a infraestrutura disponível para reutilização, triagem e reciclagem, além da quantidade de resíduos têxteis gerados.
+
+Assim, o projeto demonstra como os dados podem ajudar a formular perguntas mais específicas e orientar investigações, sem atribuir aos registros comerciais informações que eles não contêm.
+
+## 9. Conclusões
+
+A análise dos registros comerciais permite identificar os países com maiores volumes declarados de importação e exportação de roupas usadas, observar mudanças ao longo dos anos e reconhecer lacunas que precisam ser consideradas na interpretação dos resultados.
+
+Os dados preliminares destacam a importância de investigar os fluxos comerciais por país e período, evitando conclusões baseadas apenas em totais gerais. A ausência de informações para determinados países ou anos também demonstra a necessidade de verificar a cobertura das bases antes de realizar comparações.
+
+A principal conclusão é que os dados de comércio internacional permitem mapear a circulação de roupas usadas, mas não são suficientes, isoladamente, para medir seu impacto ambiental efetivo.
+
+Para avaliar a proporção de roupas que é reutilizada, reciclada ou descartada, seria necessário obter informações adicionais sobre a condição das peças, a destinação após a importação, a geração de resíduos têxteis e a capacidade local de triagem e reciclagem.
+
+Portanto, a contribuição do projeto está em transformar registros comerciais em informações organizadas, identificar padrões relevantes e estabelecer uma base para investigações mais aprofundadas sobre economia circular e gestão de resíduos têxteis.
+
+## 10. Limitações da análise
+
+Algumas limitações precisam ser consideradas na interpretação dos resultados.
+
+Primeiramente, o país declarante em um registro comercial não deve ser automaticamente interpretado como destino final das roupas. Além disso, valores ausentes não significam necessariamente que não houve comércio.
+
+O código HS 6309 possui um escopo específico e não representa todo o comércio de resíduos têxteis nem todas as categorias de roupas usadas. Também podem existir diferenças de cobertura, qualidade e reporte entre países e anos.
+
+O indicador de circularidade do Eurostat representa uma medida geral de uso circular de materiais e não deve ser interpretado como um indicador específico de reutilização de roupas.
+
+Por fim, uma associação entre volumes comerciais e indicadores ambientais não comprova uma relação de causa e efeito. As conclusões devem permanecer proporcionais às informações efetivamente disponíveis.
+
+## 11. Próximas etapas
+
+Para aprofundar o projeto, as próximas etapas incluem validar os principais valores na base original, concluir o painel do Looker Studio e registrar os critérios utilizados no tratamento dos dados.
+
+Também será importante investigar fontes adicionais sobre geração e destinação de resíduos têxteis, reutilização e reciclagem por país. A inclusão dessas informações poderá permitir análises mais específicas sobre a relação entre o comércio de roupas usadas e os desafios ambientais.
+
+## 12. Painel interativo
+
+O painel desenvolvido no Looker Studio tem como objetivo facilitar a exploração dos dados por meio de gráficos e filtros. As visualizações previstas incluem rankings de exportadores e importadores, evolução anual dos volumes comerciais e comparação entre os fluxos de importação e exportação.
+
+O painel também pode permitir a seleção de países e anos, tornando mais fácil identificar padrões e consultar os registros que sustentam as conclusões do projeto.
+
+Link do painel: inserir o endereço compartilhável do Looker Studio.
+
+## 13. Autor
+
 Yago Bartensky de Lima
