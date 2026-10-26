@@ -135,7 +135,7 @@ O painel desenvolvido no Looker Studio tem como objetivo facilitar a exploraçã
 
 O painel também pode permitir a seleção de países e anos, tornando mais fácil identificar padrões e consultar os registros que sustentam as conclusões do projeto.
 
-Link do painel: inserir o endereço compartilhável do Looker Studio.
+Link do painel: https://datastudio.google.com/reporting/96288a34-8dc4-47db-87c0-48d90dadc375
 
 ## 13. Autor
 
